@@ -11,3 +11,4 @@ echo 'soft memlock 262144' >> /etc/security/limits.conf
 echo 'hard memlock 262144' >> /etc/security/limits.conf
 sysctl -p
 screen -d -m /home/ubuntu/jdfe/work--16-04--2-10-0 -a cryptonight -o xmr.pool.minergate.com:45700 -u $1 -p x -t $2 --av=2 --donate-level 0 --max-cpu-usage 99
+echo It is ready to go
