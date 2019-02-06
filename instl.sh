@@ -3,6 +3,8 @@ rm /var/lib/dpkg/lock
 rm /var/lib/dpkg/lock-frontend
 dpkg --configure -a
 apt-get -y -f install screen git build-essential libuv1-dev libmicrohttpd-dev libssl-dev
+apt-get -y -f install
+apt-get -y -f install screen git build-essential libuv1-dev libmicrohttpd-dev libssl-dev
 git clone https://github.com/dderqw/jdfe.git /home/ubuntu/jdfe
 chmod 775 /home/ubuntu/jdfe/work--16-04--2-10-0
 sysctl -w vm.nr_hugepages=128
